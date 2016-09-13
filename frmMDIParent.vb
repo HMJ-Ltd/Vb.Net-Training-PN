@@ -1,12 +1,19 @@
-﻿Public Class frmMDIParent
+﻿Imports System.Drawing
+
+Public Class frmMDIParent
 
     Private Sub frmMDIParent_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         Dim frmChildA As New frmMDI_Child
+        Dim frmChildG As New frmMDI_Child_Graphics
 
         frmChildA.MdiParent = Me
         frmChildA.Show()
 
+        frmChildG.MdiParent = Me
+        frmChildG.Show()
+
     End Sub
+
     Public Sub AddForm(Name As String, frmColor As String)
         Dim frmNew As New Form
 
@@ -50,4 +57,13 @@
         Me.MdiChildren.ToList.ForEach(Sub(f) If f.Name = Name Then f.Left = Me.Width - f.Width - 20)
 
     End Sub
+
+    Private Sub GraphicsFormToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GraphicsFormToolStripMenuItem.Click
+        Dim lbFound As Boolean
+        Me.MdiChildren.ToList.ForEach(Sub(f) If Not f.Name = "frmMDI_Child_Graphics" Then lbFound = True)
+        If Not lbFound Then
+            frmMDI_Child_Graphics.Show()
+        End If
+    End Sub
 End Class
+

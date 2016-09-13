@@ -26,12 +26,13 @@ Partial Class frmMDIParent
         Me.AddRedFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseFormsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ShowConrolPanelToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GraphicsFormToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddRedFormToolStripMenuItem, Me.CloseFormsToolStripMenuItem, Me.ShowConrolPanelToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddRedFormToolStripMenuItem, Me.CloseFormsToolStripMenuItem, Me.ShowConrolPanelToolStripMenuItem, Me.GraphicsFormToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Size = New System.Drawing.Size(875, 24)
@@ -56,6 +57,12 @@ Partial Class frmMDIParent
         Me.ShowConrolPanelToolStripMenuItem.Size = New System.Drawing.Size(119, 20)
         Me.ShowConrolPanelToolStripMenuItem.Text = "Show Conrol Panel"
         '
+        'GraphicsFormToolStripMenuItem
+        '
+        Me.GraphicsFormToolStripMenuItem.Name = "GraphicsFormToolStripMenuItem"
+        Me.GraphicsFormToolStripMenuItem.Size = New System.Drawing.Size(96, 20)
+        Me.GraphicsFormToolStripMenuItem.Text = "Graphics Form"
+        '
         'frmMDIParent
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -76,5 +83,6 @@ Partial Class frmMDIParent
     Friend WithEvents AddRedFormToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CloseFormsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ShowConrolPanelToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents GraphicsFormToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class

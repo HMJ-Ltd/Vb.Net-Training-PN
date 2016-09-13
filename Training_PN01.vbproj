@@ -70,6 +70,13 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classAnimal.vb" />
+    <Compile Include="frmMDI_Child_Graphics.Designer.vb">
+      <DependentUpon>frmMDI_Child_Graphics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMDI_Child_Graphics.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMDIParent.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -98,8 +105,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Training_PN_M01.vb" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frmMDI_Child_Graphics.resx">
+      <DependentUpon>frmMDI_Child_Graphics.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMDIParent.resx">
       <DependentUpon>frmMDIParent.vb</DependentUpon>
     </EmbeddedResource>
